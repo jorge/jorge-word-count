@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle jorge-word-count'
+      'command': 'jorge-word-count:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'jorge-word-count'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'jorge-word-count:toggle'
+        }
+      ]
+    ]
+  }
+]
